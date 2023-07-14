@@ -1,0 +1,159 @@
+/* استایل صفحه چت شخصی */
+.chat-page {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  left: 230px;
+  bottom: 20px;
+  background-color: #36393F;
+  color: #000000;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* استایل سربرگ چت */
+.chat-header {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #36393F;
+  color: #FFFFFF;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.chat-header .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 10px;
+}
+
+.chat-header .avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.chat-header .person-name {
+  font-weight: bold;
+}
+
+/* استایل پیام‌ها */
+.chat-messages {
+  flex-grow: 1;
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+/* استایل ورودی پیام */
+.chat-input {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: #36393F;
+  color: #FFFFFF;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.chat-input input[type="text"] {
+  flex-grow: 1;
+  background-color: transparent;
+  border: none;
+  color: #FFFFFF;
+  outline: none;
+}
+
+/* استایل دکمه ارسال */
+.send-button {
+  background-color: #7289DA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+/* استایل تماس ویدیویی */
+.video-call {
+  position: fixed;
+  height: 75vh;
+  top: 80px;
+  right: 20px;
+  left: 230px;
+  background-color: #FFFFFF;
+  color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* استایل چت بار */
+.chat-bar {
+  position: fixed;
+  bottom: 20px;
+  left: 230px;
+  right: 20px;
+  background-color: #36393F;
+  color: #FFFFFF;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+}
+
+.chat-bar input[type="text"] {
+  flex-grow: 2;
+  background-color: transparent;
+  border: none;
+}
+
+/* استایل دکمه ارسال */
+.send-button {
+  background-color: #7289DA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* جداکننده بالایی */
+}
+
+
+/* استایل دکمه ارسال در چت بار */
+.chat-bar .send-button {
+  background-color: #7289DA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+/* استایل خط نازک در قسمت ارسال پیام */
+.chat-input::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 100%;
+  background-color: #FFFFFF;
+  margin-left: 10px;
+}
+
+/* استایل دکمه ارسال */
+.send-button {
+  background-color: #7289DA;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 20px;
+  padding: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
